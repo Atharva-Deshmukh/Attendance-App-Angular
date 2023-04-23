@@ -1,0 +1,46 @@
+<h1>MARK ATTENDANCE</h1>
+
+<div class="product-list">
+  <h1>Attendance for Branch:  and subject: </h1>
+  <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>email</th>
+          <th>Roll No</th>
+          <th>Branch</th>
+          <th>Subject</th>
+          <th>Scheduled Day</th>
+          <th>Scheduled Time SLOT</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <!-- Productlist[] jo .ts me defined hai usko iterate karne ke liye loop lagaya -->
+          <tr *ngFor="let student of attendanceList">
+            <td>{{ student.Name }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.Roll_no }}</td>
+            <td>{{student.Branch}}</td>
+            <td>{{student.Subject}}</td>
+            <td>{{this.day}}</td>
+            <td>{{this.timeSlot}}</td>
+
+
+            <!-- Delete -->
+            <td>
+              <mat-radio-group>
+                <mat-radio-button value="1" (click)="markAttendance(student.id)">Attendance</mat-radio-button>
+                <mat-radio-button value="2" (click)="Undo(student.id)">Undo</mat-radio-button>
+              </mat-radio-group>
+            </td>
+          </tr>
+        </tbody>
+
+  </table>
+
+  <button class="form-button" (click)="Summary()">Mark Attendance</button>
+  <br>
+  <br>
+</div>

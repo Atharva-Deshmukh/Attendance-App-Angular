@@ -1,0 +1,82 @@
+_____________________________________________________________________________
+                            <-- MODIFICATION -->
+_____________________________________________________________________________
+
+                                APP STRUCTURE
+
+Home Component:
+    --> Student Login --> Student component
+    --> Teacher Login --> Teacher component
+    --> Admin Login/SignUp  --> Admin component
+
+[ACCESSIBLE BY ADMIN AND Teacher]
+Teacher Component: (filaal ek teacher sab subject access karega, later multiple teachers ke saath khelenge)
+    --> Teacher profile
+    --> Create branchwise and subjectwise classrooms (naya student array bnao JSON pe of students)
+    --> Enroll (add) students to particular classroom
+    --> Mark attendance for that Branch and Lecture with [[Time stamp and day/date]]
+    --> Update that in JSON with timestamp
+
+[ACCESSIBLE BY ADMIN AND Student]
+Student Component: ((filaal ek student sab subject access karega, later multiple students ke saath khelenge))
+    --> See daywise and lecture-wise attendance with timestamp
+    --> See Profile
+    --> See enrolled classrooms
+
+Admin Component:
+    --> Acess whole database component
+    --> create and delete teachers and students record
+    --> Update student/teacher record
+
+
+DATABASE Component: (ACTUAL STORAGE IS JSON server)
+    --> It just loads the JSON server data.
+    --> supports CRUD operations
+
+    --> ARRAY STRUCTURE:>> branches[] -> classrooms[] -> students
+
+    --> Has query options:
+        --> show available classrooms with modification and delete option
+        --> show available students with modification and delete option
+        --> show available branches with modification and delete option
+
+UPDATES COMPONENT:
+        --> Update form for student Update
+        --> update form for teacher update
+
+Analysis Component:
+    --> branchwise attendance
+    --> Day-wise attendance analysis
+
+
+
+                                  SPRINTS
+_________________________________________________________________
+
+[DONE] create JSON server
+[DONE] create folder structure keeping in mind the functionality
+[DONE] install matUI and ang-Bootsrap
+[DONE] add routes and check on spot
+[DONE] add auth guards
+[DONE] set all auth guards logic
+[DONE] define dataypes: Student, Teacher
+[DONE] create DB branchwise, subjectwise,classroomwise
+[DONE] Home component UI and service
+[DONE] admin login component UI and service
+[DONE] teacher login component UI and service
+[DONE] student login component UI and service
+
+ teacher component UI and service
+  --> Create classroom (branchwise) by adding students (after loading the student list by branch)
+  --> schedule lecture
+  --> mark attendance
+  --> Record Actual Time-stamp of button clicked
+
+student component UI and service
+ --> see full profile and attendance
+
+
+[DONE] admin component UI and service
+[DONE] CRUD folder-wise UI and service
+
+analysis component UI and service

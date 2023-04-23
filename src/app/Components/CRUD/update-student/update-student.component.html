@@ -1,0 +1,45 @@
+<!-- display table with teacher data and give delete option there -->
+<div class="product-list">
+  <h1>Student DATABASE</h1>
+  <table>
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>email</th>
+          <th>password</th>
+          <th>Roll No</th>
+          <th>Branch</th>
+          <th>Subject</th>
+          <th>Action</th>
+          <th>id</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <!-- Productlist[] jo .ts me defined hai usko iterate karne ke liye loop lagaya -->
+          <tr *ngFor="let student of studentTable">
+            <td><img src="assets/student.png"/></td>
+            <td>{{student.Name}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.password}}</td>
+            <td>{{student.Roll_no}}</td>
+            <td>{{student.Branch}}</td>
+            <td>{{student.Subject}}</td>
+
+            <!-- Update -->
+            <td>
+              <mat-radio-group>
+                <mat-radio-button value="1" (click)="updateStudent(student.id)">Update the Student</mat-radio-button>
+              </mat-radio-group>
+            </td>
+
+            <td>{{ student.id }}</td>
+          </tr>
+        </tbody>
+
+  </table>
+</div>
+
+
+

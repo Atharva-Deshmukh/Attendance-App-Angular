@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title><h1>WELCOME Back {{adminName}} <button *ngIf="isAdminSignedIn === true" (click)="adminLogout()" class="logoutButton">LogOut</button></h1></mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="assets/adminportal.png" alt="Image loading">
+  <mat-card-content>
+    <h2>
+      Plz select your next action from the menu below
+
+      <!-- Components/Student/delete-student -->
+
+      <button mat-button [matMenuTriggerFor]="belowMenu" class="MenuButton">MENUS</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item (click)="addTeacher()">Add a Teacher</button>
+        <button mat-menu-item (click)="removeTeacher()">Remove a Teacher</button>
+        <button mat-menu-item (click)="addStudent()">Add a Student</button>
+        <button mat-menu-item (click)="removeStudent()">Remove a Student</button>
+        <button mat-menu-item (click)="updateTeacher()">Update a Teacher</button>
+        <button mat-menu-item (click)="updateStudent()">Update a Student</button>
+      </mat-menu>
+
+    </h2>
+  </mat-card-content>
+</mat-card>
+
+
+

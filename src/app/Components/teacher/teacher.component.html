@@ -1,0 +1,25 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title><h1>WELCOME Back {{teacherName}} <button *ngIf="isTeacherSignedIn === true" (click)="teacherLogout()" class="logoutButton">LogOut</button></h1></mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="assets/TeacherLogo.png" alt="Image loading">
+  <mat-card-content>
+    <h2>
+      Plz select your next action from the menu below
+
+      <!-- Components/Student/delete-student -->
+
+      <button mat-button [matMenuTriggerFor]="belowMenu" class="MenuButton">MENUS</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item (click)="createClassroom()">Create a classroom</button>
+        <!-- <button mat-menu-item (click)="deleteClassroom()">Delete a classroom</button> -->
+        <button mat-menu-item (click)="scheduleLecture()">Schedule a lecture</button>
+        <!-- <button mat-menu-item (click)="markAttendance()">Mark attendance</button> -->
+      </mat-menu>
+
+    </h2>
+  </mat-card-content>
+</mat-card>
+
+
+

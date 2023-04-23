@@ -1,0 +1,46 @@
+.login{
+  background-color: rgb(209, 241, 203);
+  border: 3px solid black;
+    text-align: center;
+    border-radius: 22px;
+    margin-top: 140px;
+    cursor: pointer;
+
+}
+
+.login img{
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 34px;
+}
+
+.user-auth h1{
+  margin-top: 50px;
+  margin-bottom: 80px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.user-auth {
+  margin-bottom: 100px;
+}
+.user-auth a{
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.user-auth img{
+  width: 150px;
+  height:  150px;
+  margin-left: 45%;
+  margin-top: 1px;
+  margin-bottom: 2%;
+  border-radius: 34px;
+  border:  3px solid black;
+}
+
+.selectBranch{
+  background-color: rgb(244, 171, 171);
+}
+

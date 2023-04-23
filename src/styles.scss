@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: sans-serif;
+}
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.common-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+.form-input {
+  height: 35px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(15, 15, 16);
+  border-radius: 12px;
+  padding-left: 15px;
+  color: rgb(19, 18, 20);
+}
+.form-button {
+  height: 35px;
+  border: 1px solid rgb(18, 17, 19);
+  color: rgb(21, 20, 20);
+  background-color: rgb(247, 44, 122);
+  border-radius: 32px;
+  margin-left: 34%;
+  margin-top: 3%;
+  width: 112px;
+  cursor: pointer;
+}
+
+.form-button:hover{
+  background-color: rgb(242, 242, 73);
+  color: red;
+  font-weight: bolder;
+}
+
+.error-p{
+  color: red;
+  font-weight: bolder;
+}
+
+.message-p{
+  color: green;
+  text-align: center;
+}
+
+.carousel-caption {
+  background-color: #0000007d;
+  border-radius: 10px;
+  border: 5px rgb(245, 11, 66);
+
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: rgb(53, 10, 242);
+  border-radius: 5px;
+}
+
+.invalid-input{
+  color: red;
+  font-size: 12px;
+  margin-top:-20px
+}
+button:disabled{
+  cursor: not-allowed;
+}
+.max-width{
+  width: 100%;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form-input{
+    border-radius: 23px;
+    height: 39px;
+    text-align: center;
+}
+
+.form-button{
+    height: 39px;
+    width: 89px;
+    border-radius: 30px;
+    background-color: rgb(245, 85, 221);
+}
+
+.seller-auth input:hover{
+    background-color: rgb(253, 194, 86);
+    cursor: pointer;
+}
+
+.errormessage{
+    color: rgb(243, 11, 11);
+    font-weight: bold;
+}
+

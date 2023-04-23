@@ -1,0 +1,174 @@
+{
+  "CSE-classroom": [
+    {}
+  ],
+  "IT-classroom": [
+    {}
+  ],
+  "Mech-classroom": [
+    {}
+  ],
+  
+  "ECE-classroom": [
+    {}
+  ],
+  "admins": [
+    {
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "admin1",
+      "id": 1
+    },
+    {
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": "admin2",
+      "id": 2
+    }
+  ],
+  "teachers": [
+    {
+      "Name": "Teacher 1 update",
+      "email": "teacher1@gmail.com",
+      "password": "123",
+      "empId": "1000",
+      "id": 1
+    },
+    {
+      "Name": "Teacher 2",
+      "email": "teacher2@gmail.com",
+      "password": "111",
+      "empId": 1001,
+      "id": 2
+    },
+    {
+      "Name": "Teacher 3",
+      "email": "teacher3@gmail.com",
+      "password": "123",
+      "empId": "111",
+      "id": 3
+    }
+  ],
+  "students": [
+    {
+      "Name": "Akash",
+      "email": "student1@gmail.com",
+      "password": "student1",
+      "Roll_no": "31",
+      "Branch": "CSE",
+      "id": 1,
+      "Subject": "Cpp",
+      "Attendance_day": "Monday",
+      "Attendance_TimeSlot": "1:00 PM",
+      "Timestamp": "2023-03-27T08:08:45.500Z"
+    },
+    {
+      "Name": "Atharva",
+      "email": "ad1@gmail.com",
+      "password": "111",
+      "Roll_no": 17,
+      "Branch": "CSE",
+      "id": 3,
+      "Subject": "Cpp",
+      "Attendance_day": "Monday",
+      "Attendance_TimeSlot": "1:00 PM",
+      "Timestamp": "2023-03-27T08:08:48.442Z"
+    },
+    {
+      "Name": "Palak",
+      "email": "p1@gmail.com",
+      "password": "111",
+      "Roll_no": 111,
+      "Branch": "CSE",
+      "id": 4,
+      "Subject": "Cpp",
+      "Attendance_day": "Monday",
+      "Attendance_TimeSlot": "1:00 PM",
+      "Timestamp": "2023-03-27T08:08:47.389Z"
+    },
+    {
+      "Name": "Rhythm update",
+      "email": "r@gmail.com",
+      "password": "111",
+      "Roll_no": "111",
+      "Branch": "Mech",
+      "id": 5
+    },
+    {
+      "Name": "Gupta",
+      "email": "ag@gmail.com",
+      "password": "111",
+      "Roll_no": "111",
+      "Branch": "Mech",
+      "id": 6
+    },
+    {
+      "Name": "soham",
+      "email": "soham@gmail.com",
+      "password": "123",
+      "Roll_no": 78,
+      "Branch": "Mech",
+      "id": 7
+    },
+    {
+      "Name": "Shridhar",
+      "email": "sa@gmail.com",
+      "password": "123",
+      "Roll_no": "77",
+      "Branch": "IT",
+      "id": 8
+    },
+    {
+      "Name": "Anand",
+      "email": "ad@gmail.com",
+      "password": "121",
+      "Roll_no": 111,
+      "Branch": "IT",
+      "id": 9
+    },
+    {
+      "Name": "Varad",
+      "email": "sh@gmail.com",
+      "password": "1111",
+      "Roll_no": 112,
+      "Branch": "IT",
+      "id": 10
+    },
+    {
+      "Name": "Tope",
+      "email": "st@gmail.com",
+      "password": "11",
+      "Roll_no": 12,
+      "Branch": "ECE",
+      "id": 11,
+      "Subject": "Current Electricity",
+      "Attendance_day": "Tuesday",
+      "Attendance_TimeSlot": "3:00 PM",
+      "Timestamp": "2023-03-27T05:12:00.008Z"
+    },
+    {
+      "Name": "Pathak",
+      "email": "pathak@gmail.com",
+      "password": "11",
+      "Roll_no": 11,
+      "Branch": "ECE",
+      "id": 12,
+      "Subject": "Current Electricity",
+      "Attendance_day": "Tuesday",
+      "Attendance_TimeSlot": "3:00 PM",
+      "Timestamp": "2023-03-27T05:12:00.856Z"
+    },
+    {
+      "Name": "soumya",
+      "email": "sb@gmail.com",
+      "password": "11",
+      "Roll_no": "11",
+      "Branch": "ECE",
+      "id": 13,
+      "Subject": "Current Electricity",
+      "Attendance_day": "Tuesday",
+      "Attendance_TimeSlot": "3:00 PM",
+      "Timestamp": "2023-03-27T05:12:02.305Z"
+    }
+  ]
+}

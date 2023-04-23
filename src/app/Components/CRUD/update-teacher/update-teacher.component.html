@@ -1,0 +1,40 @@
+<!-- Pehle id ke hisab se data le aao and then prefill it, then update using API -->
+<div class="product-list">
+  <h1>TEACHER DATABASE</h1>
+  <table>
+      <thead>
+        <tr>
+          <th>Photo</th>
+          <th>Name</th>
+          <th>email</th>
+          <th>password</th>
+          <th>EmpId</th>
+          <th>Action</th>
+          <th>id</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <!-- Productlist[] jo .ts me defined hai usko iterate karne ke liye loop lagaya -->
+          <tr *ngFor="let teacher of teacherTable">
+            <td><img src="assets/student.png"></td>
+            <td>{{ teacher.Name }}</td>
+            <td>{{ teacher.email }}</td>
+            <td>{{ teacher.password }}</td>
+            <td>{{ teacher.empId }}</td>
+
+            <!-- Delete -->
+            <td>
+              <mat-radio-group>
+                <mat-radio-button value="1" (click)="UpdateTeacher(teacher.id)">Update Teacher</mat-radio-button>
+              </mat-radio-group>
+            </td>
+
+            <td>{{ teacher.id }}</td>
+          </tr>
+        </tbody>
+
+  </table>
+</div>
+
+

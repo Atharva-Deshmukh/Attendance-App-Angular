@@ -1,0 +1,102 @@
+<!-- Take pre-requisites and create classroom by rendering here itself -->
+
+<div class="user-auth">
+  <div class="sign-up">
+   <h1>Creating a new Classroom</h1>
+
+   <img src="assets/classroom.png">
+
+   <!-- <p style="color:green" *ngIf="Added===true">Teacher ADDED sucessfully!</p> -->
+
+   <!-- The ng-model directive binds the value of HTML controls (input, select, textarea) to application data. -->
+    <form #preRequisites="ngForm" class="common-form" (ngSubmit)="PoceedToCreateClassroom(preRequisites.value)">
+
+
+      <!-- ASK FOR BRANCH -->
+          <p style="color: rgb(31, 105, 39);">For which Branch</p>
+          <ng-select [items]="Branches" [(ngModel)]="selectedBranch" name="Branch" placeholder="Branch selected -> " class="selectBranch">
+          </ng-select>
+
+          <br><br><br><br><br>
+      <!-- ASK FOR SUBJECT -->
+          <p style="color: rgb(103, 61, 229);">For which Subject</p>
+          <ng-select [items]="Subjects" [(ngModel)]="selectedSubject" name="Subject" placeholder="Subject selected -> " class="selectBranch">
+          </ng-select>
+
+          <br><br><br><br><br>
+          <button [disabled]="preRequisites.invalid" class="form-button">Proceed</button>
+    </form>
+  </div>
+<hr style="color: black;">
+<hr style="color: black;">
+  <!-- display table with student data and give option there -->
+<div class="product-list" *ngIf="proceedClicked===true">
+  <h1>Choose Students To add into your {{selectedBranch}} classroom for subject {{selectedSubject}}</h1>
+  <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>email</th>
+          <th>Roll No</th>
+          <th>Branch</th>
+          <th>Action</th>
+          <th>id</th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <!-- Productlist[] jo .ts me defined hai usko iterate karne ke liye loop lagaya -->
+          <tr *ngFor="let student of filteredStudentTable">
+            <td>{{ student.Name }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.Roll_no }}</td>
+            <td>{{student.Branch}}</td>
+
+            <!-- Delete -->
+            <td>
+              <mat-radio-group>
+                <mat-radio-button value="1" (click)="AddToClass(student.id)">Add to classroom</mat-radio-button>
+                <mat-radio-button value="1" (click)="Undo(student.id)">Undo</mat-radio-button>
+              </mat-radio-group>
+            </td>
+
+            <td>{{ student.id }}</td>
+          </tr>
+        </tbody>
+
+  </table>
+  <br>
+  <br>
+
+  <button (click)="scheduleLec()" class="form-button">Proceed</button>
+  <br>
+  <br>
+</div>
+
+<hr style="color: black;">
+<hr style="color: black;">
+
+<h1>SCHEDULE THE LECTURE</h1>
+<div *ngIf="proceed1Clicked===true" >
+  <form #schedule="ngForm" class="common-form" (ngSubmit)="finish(schedule.value)">
+    <!-- ASK FOR DAY -->
+    <p style="color: rgb(51, 41, 238);">Choose lecture day</p>
+    <ng-select [items]="Days" [(ngModel)]="selectedDay" name="day" placeholder="Day selected -> " class="selectBranch">
+    </ng-select>
+
+    <br><br><br><br><br>
+<!-- ASK FOR TIME -->
+    <p style="color: rgb(234, 118, 23);">Choose lecture Timing</p>
+    <ng-select [items]="Time" [(ngModel)]="selectedTime" name="time_slot" placeholder="Time Slot selected -> " class="selectBranch">
+    </ng-select>
+
+    <button class="form-button">FINISH</button>
+
+    <br><br><br><br><br>
+  </form>
+</div>
+
+
+
+
+
